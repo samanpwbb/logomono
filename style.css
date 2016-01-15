@@ -1,10 +1,10 @@
 *{box-sizing:border-box; font-size: 1rem;}
-body{font-family: 'Work Sans', sans-serif; font-weight: 300;
+body{font-family: 'Work Sans', sans-serif; font-weight: 400;
 color:#456; margin:0; padding:0;}
 
 h1{font-size: 5em; font-weight: 600;}
 .container{margin: 0 auto; max-width: 50em; padding: 2rem}
-header{background-color:#456; color:#fff}
+header,footer{background-color:#456; color:#fff}
 .uppercase{text-transform: uppercase}
 
 
@@ -18,13 +18,13 @@ svg,path,rect,ellipse,polygon,text{fill:currentcolor}
 
 .example .only-dark-background{display:block !important;/*important is appropriate*/ opacity:0;}
 
- .example:hover{background-color:#456; color:#fff}
+ .example:hover{background-color:#456 ; color:#fff}
 #invert:checked ~ div .example .only-dark-background,.example:hover .only-dark-background{display:block !important;  opacity: 1; }
 #invert:checked ~ div .example .only-light-background, .example:hover .only-light-background{opacity:0;  }
 
 
 #invert:checked ~ .wrapper{color:#fff; background-color:#456 }
-#invert:checked ~ div header{background-color:#fff; color:#456; }
+#invert:checked ~ div header, #invert:checked ~ div footer{background-color:#fff; color:#456; }
 .code-sample{border: .2em solid; overflow:auto;padding:2em; font-family: menlo, monospace ; }
 .code-sample > div{line-height: 3em  ;}
 .code-sample  span{display:inline-block ; white-space:nowrap;  }
@@ -34,9 +34,56 @@ svg,path,rect,ellipse,polygon,text{fill:currentcolor}
 .code-sample .value{position:relative;   padding-left: 0em;}
 .code-sample span  em { user-select:none;-webkit-user-select:none;position:absolute; bottom:-0em; display:block;  font-size: .6em;padding: 0 .5em; height: 1.5em; line-height:1.5em; font-family:'Work Sans', sans-serif;font-style:normal;opacity:.5; left:0; text-transform: uppercase; font-weight: 600;}
 .code-sample .value.coords{opacity:.5}
+header p{font-weight: 400}
+p{font-weight: 400}
 
-
+h3{font-weight: 100; font-size:3em;}
 input[type="radio"]{display:none}
 label{ background-color:#456; cursor:pointer; color:#fff;position:fixed; top: 0; right:0;border: .2em solid ; padding: 1em; margin: 0; font-weight:600; -webkit-user-select:none; user-select:none; text-transform: uppercase; text-align:center;  width: 12em; display:block;}
 label:hover{color:#456; background-color:#fff;}
 input[type="radio"]:checked + label{display:none ; opacity:0;}
+
+h3{margin-bottom:0;margin-top: 2em;}
+.opacity-demo {text-align:center;}
+.opacity-demo svg{ margin:1rem; max-width: 40%; max-height: 7em; display:inline-block;}
+
+
+
+
+
+
+.brushpen {
+margin: 0 auto; width: 7em; height: 7em;;
+
+
+  display: block;
+}
+
+
+.graphic {
+  fill: currentcolor;transform:scale(0.7);
+  animation: 1.5s spin cubic-bezier(0.25, 1.5, 0, 2) infinite ;
+  transform-origin: 50% 50%;
+}
+
+@keyframes spin {
+  0% { transform: rotate(-10deg) scale(0.7); }
+  50% { transform: rotate(100deg) scale(0.7); }
+  100% { transform: rotate(-10deg) scale(0.7); } }
+
+
+.smear {  fill:none;stroke:currentcolor;stroke-width:20;stroke-dasharray:400, 400;stroke-linecap:round; stroke-dashoffset:400;
+  opacity:1; animation: 1.5s smear cubic-bezier(0.5, .5, 0, 0) infinite }
+
+@keyframes smear {
+  0% {stroke-dashoffset: 750;}
+  2% {stroke-dashoffset: 750;}
+  2% { stroke-dashoffset: 420;}
+  49% { stroke-dashoffset: 90; }
+  51% { stroke-dashoffset: 400; }
+  100% { stroke-dashoffset: 750; }
+}
+
+ul{margin: 1rem 0 ; padding:0;}
+li{display: inline-block; vertical-align:top;margin:0; width: 30% ; padding: 1rem 0;  border-top: .125em solid; margin-right: 3%}
+li:last-child{margin-right:0;}
