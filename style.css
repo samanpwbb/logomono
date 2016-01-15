@@ -4,7 +4,7 @@ color:#456; margin:0; padding:0;}
 
 h1{font-size: 5em; font-weight: 600;}
 .container{margin: 0 auto; max-width: 50em; padding: 2rem 1rem}
-header,footer{background-color:#456; color:#fff}
+header,footer{background-color:#456; color:#fff; padding: 3rem 0}
 .uppercase{text-transform: uppercase}
 
 
@@ -18,9 +18,12 @@ svg,path,rect,ellipse,polygon,text{fill:currentcolor}
 
 .example .only-dark-background{display:block !important;/*important is appropriate*/ opacity:0;}
 
- .example:hover{background-color:#456 ; color:#fff}
-#invert:checked ~ div .example .only-dark-background,.example:hover .only-dark-background{display:block !important;  opacity: 1; }
-#invert:checked ~ div .example .only-light-background, .example:hover .only-light-background{opacity:0;  }
+@media (min-width:40em){ .example:hover{background-color:#456 ; color:#fff}
+.example:hover .only-dark-background{display:block !important;  opacity: 1; }
+ .example:hover .only-light-background{opacity:0;  }
+}
+#invert:checked ~ div .example .only-dark-background{display:block !important;  opacity: 1; }
+#invert:checked ~ div .example .only-light-background{opacity:0;  }
 
 
 #invert:checked ~ .wrapper{color:#fff; background-color:#456 }
@@ -92,6 +95,9 @@ li:last-child{margin-right:0;}
 
 
 @media (max-width:40em){
+  li{width: 100%}
+  h1{font-size: 18vw}
+h1 small{display:block; width: 100% ; font-size: 4vw}
 .code-sample{padding: 1rem ;}
  .code-sample .attribute{padding-left:.5em !important;}
  .code-sample span .attribute{ display:block !important; width: 100%;}
@@ -99,3 +105,6 @@ li:last-child{margin-right:0;}
 
 
   .intro p, .intro h2{text-align:center}
+
+
+code{padding: .2em; opacity:.7}
