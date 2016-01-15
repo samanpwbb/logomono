@@ -113,9 +113,9 @@ one-color logos,  the right way
 <div class="container">
 
   <h3>One color, no exceptions</h3>
-  <p>okay one exception: opacity is ok &ndash; but only as your last options.  <br> Do it inline as <code>style="opacity:.5"</code> rather than external css or fill-opacity.   Only use it where it’s impossible to accurately and respectfully convey the logo as one solid fill.
-  Gradients are a no-no</p>
-  <p>Here are some stubborn examples where it would be impossible to not use opacity without creating a completely different logo, really messing with the original artists linework (literally stepping over the line)<p>
+  <p>Okay, one exception: opacity is available &ndash; but only as a last option.  <br> Do it inline as <code>style="opacity:.5"</code> rather than external css or <code>fill-opacity</code>.   Only use it in cases where it would be otherwise impossible to accurately and respectfully convey the logo as one solid fill.
+  Gradients are a no-no  too beacuse they use <code>id</code>'s  which causes major concatination problems. </p>
+  <p>Here are some stubborn examples where it would be impossible to not use opacity without creating a completely different logo, messing with the original linework (literally stepping over the line)<p>
 <div class="example opacity-demo">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1066 825"  >
     <path style="opacity:0.3" d="M 855,358.9 H 669.3 V 33 H 855 Z"></path>
@@ -159,13 +159,17 @@ one-color logos,  the right way
 
 
    <h3> 4% space inside the viewbox, start at 0 0 </h3>
-<p>leave between 4% and 5% of your total logo area. This prevents logo edges from sharply aliasing at small sizes.
-Don't give too much room however, or the logo will appear tiny when used next to others. Logomono will reject files with blank areas of 10% or greater around the margin </p>
+<p>leave between 4% and 5% of your total logo area. This prevents logo edges from sharply aliasing at small sizes.</p>
+<p>Don't give too much room however, or the logo will appear tiny when used next to others.</p>
 
 <div class="safe-viewbox"  >
   <svg  xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 100 50" > <path   d="M 4,4 96,4 96,46 4,46 Z" /> </svg>
 
 </div>
+<p> Logomono will reject files with blank areas of 10% or greater around the margin.</p>
+<p> While we're talking viewboxes,  try to keep viewbox coordinates below 500 and limit path node positions to 2 decimal places. This keeps our files small, lean and mean.</p>
+
+
 
 <h3>Basic &lt;path&gt;, basic coordinates only</h3>
 <p>No <code>rect</code>, <code>polygon</code>, <code>ellipse</code>, <code>line</code>, <code>circle</code> or <code>text</code>  elements. No <code>transforms</code> on <code>&lt;g&gt;</code> either. Sadly, no <code>&lt;use xlink:href="&hellip;</code> or <code>&lt;clipPath&gt;</code> either)
