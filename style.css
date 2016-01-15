@@ -95,13 +95,17 @@ li:last-child{margin-right:0;}
 
 
 @media (max-width:40em){
+
+
   li{width: 100%}
   h1{font-size: 18vw}
 h1 small{display:block; width: 100% ; font-size: 4vw}
 .code-sample{padding: 1rem ;}
  .code-sample .attribute{padding-left:.5em !important;}
  .code-sample span .attribute{ display:block !important; width: 100%;}
-  .example{padding:0  !important;}}
+  .example{padding:0  !important;}
+.code-sample em{margin-left:-5em;}
+}
 
 
   .intro p, .intro h2{text-align:center}

@@ -152,13 +152,11 @@ one-color logos,  the right way
 </div>
 
 <h3>Minimum SVG,  build the rest</h3>
-<p>There's a reason why we only want <code>viewbox=""</code> and no width/height.. we can use tools to generate the width and height to your needs.
-  Use gulp scripts to generate optimised files for dark or light backgrounds — remove the alternate paths, and generally have an easy time working with logos</p><p> You can even generate your png-fallbacks after coloring them with css and more
+<p>There's a reason why we only want <code>viewbox=""</code> and not width/height attributes.. <br>We can use tools to generate the width and height to your needs.
+  This project will soon host scripts to generate optimised files for dark or light backgrounds — remove the alternate paths, and generally have an easy time working with logos</p><p> You can even generate your png-fallbacks after coloring them with css and more
 
-  <h3>Ethical, editorial use only</h3>
-   <p>Logomono aims to collect quality and clean logos for editorial purposes and not misrepresentation.  When in doubt, ask permission from the group the logo represents.</p>
-    <p>We know you'll just go to a low quality image search engine if you dont find what you want here, so we're doing our part by at least giving you a high quality file for your fair use / fair comment</p>
-    <p> If you represent a brand and are sick of seeing your logo decay around the web, contribute your logo here.</p>
+
+
 
    <h3> 4% space inside the viewbox, start at 0 0 </h3>
 <p>leave between 4% and 5% of your total logo area. This prevents logo edges from sharply aliasing at small sizes.
@@ -169,10 +167,23 @@ Don't give too much room however, or the logo will appear tiny when used next to
 
 </div>
 
-<h3>&lt;path&gt; only</h3>
-<p>no rect, polygon, ellipse, line, circle or text  elements. we want these to be as easy as possible to work with via CSS.<br>
-For example,  my normal css includes <code>path{fill:currentcolor}</code> which is a gret but wouldnt work if your logo was drawing shapes with another SVG element</p>
-<p>&lt;Path&gt; only  also means bake your text into paths</p>
+<h3>Basic &lt;path&gt;, basic coordinates only</h3>
+<p>No <code>rect</code>, <code>polygon</code>, <code>ellipse</code>, <code>line</code>, <code>circle</code> or <code>text</code>  elements. No <code>transforms</code> on <code>&lt;g&gt;</code> either. Sadly, no <code>&lt;use xlink:href="&hellip;</code> or <code>&lt;clipPath&gt;</code> either)
+</p>
+<p>We want these files to be as easy as possible to work with as raw elements and not risk tricky things like duplicate ID pollution when concatinated into HTML.
+</p><p>Some CSS includes <code>path{fill:currentcolor}</code> which means <code>body{color:#555;}</code> could color everything in the foreground including SVG paths. the CSS would be more complex to work with shapes made by another SVG element.</p>
+<p><code>&lt;Path&gt;</code> only means bake your text into paths too.</p>
+
+
+<h3>Ethical, editorial use only</h3>
+ <p>Logomono logos are for legitimate editorial reference  and not for misrepresenting a brand.
+ </p><p>We collect and clean quality logos in a standard format to respect the integrity of each.</p>
+   <p>Copyright and trademarks for logos are still held by their respective owner where applicable.
+   When in doubt, it's best to always ask the represented organisation for permission to use their logo.</p>
+  <p>Today, we know that journalists and other communications professionals source logos using search engines. Often finding lossy  color bitmaps.  </p><p>The absence of a logo on Logomono does not prevent misrepresentation. It often degrades the quality of a brand and even risks being inappropriately displayed with more prominence than the host design.  Bring one color is one way logomono ensures appropriate use happens.</p>
+  <p>If you can verify you represent a brand and would like a logo removed from logomono, please file a github issue.<br> If you represent a brand and are sick of poor quality representations of your logo, contribute here.</p>
+
+
 </div></div>
 <footer>
   <div class="container">
