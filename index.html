@@ -163,7 +163,7 @@ one-color logos,  the right way
 
 
    <h3> 4% space inside the viewbox, start at 0 0 </h3>
-<p>leave between 4% and 5% of your total logo area. This prevents logo edges from sharply aliasing at small sizes.</p>
+<p>Leave between 4% and 5% of your total logo area. This prevents logo edges from sharply aliasing at small sizes.</p>
 <p>Don't give too much room however, or the logo will appear tiny when used next to others.</p>
 <p> Logomono will reject files with blank areas of 10% or greater around the margin.</p>
 <p> While we're talking viewboxes,  try to keep viewbox coordinates below 500 and limit path node positions to 2 decimal places. This keeps our files small, lean and mean.</p>
@@ -181,7 +181,7 @@ one-color logos,  the right way
 
 
 
-<h3>Basic &lt;path&gt;, basic coordinates only</h3>
+<h3>&lt;path&gt; only, basic coordinates</h3>
 <p>No <code>rect</code>, <code>polygon</code>, <code>ellipse</code>, <code>line</code>, <code>circle</code> or <code>text</code>  elements. No <code>transforms</code> on <code>&lt;g&gt;</code>.<br> Sadly, no <code>&lt;use xlink:href="&hellip;</code> or <code>&lt;clipPath&gt;</code> either.
 </p>
 <p>We want these files to be as easy as possible to work with as raw elements and not risk tricky things like duplicate ID pollution when concatinated into HTML.

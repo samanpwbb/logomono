@@ -361,7 +361,7 @@ h3 {
 
 .safe-viewbox svg {
   height: 18em;
-  width: 100%;
+  width: 90%;
   border: .1em solid;
   animation: viewboxey 2s ease alternate infinite;
 }
