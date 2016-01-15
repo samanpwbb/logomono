@@ -106,7 +106,14 @@ h1 small{display:block; width: 100% ; font-size: 4vw}
 
   .intro p, .intro h2{text-align:center}
 
-.safe-viewbox{position:relative; text-align:center; display:inline-block; vertical-align: center; height: 12em; width: 100%}
+.safe-viewbox{
+
+  position:relative; text-align:center; display:inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+vertical-align: center; height: 12em; width: 100%}
+
 .safe-viewbox svg{height: 8em; width: 100%; border: .1em solid;
 
 animation: viewboxey 2s ease alternate infinite}
