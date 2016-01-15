@@ -383,3 +383,7 @@ code {
     width: 30%;
   }
 }
+.boxes{text-align:center; margin-top: 4rem}
+.boxes svg{ width: 17em; height: 10em; display:inline-block; padding:0; margin:1rem 0 }
+
+@media (min-width:50em){.boxes svg:nth-child(odd){margin-right: 6em;}}
