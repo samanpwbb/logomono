@@ -1,135 +1,381 @@
-*{box-sizing:border-box; font-size: 1rem;}
-body{font-family: 'Work Sans', sans-serif; font-weight: 400;
-color:#456; margin:0; padding:0;}
-
-h1{font-size: 5em; font-weight: 600;}
-.container{margin: 0 auto; max-width: 50em; padding: 2rem 1rem}
-header,footer{background-color:#456; color:#fff; padding: 4rem 0}
-.uppercase{text-transform: uppercase}
-
-
-svg,path,rect,ellipse,polygon,text{fill:currentcolor}
-
-
-.example {padding:2rem;}
- .example path{transition: all 1s ease}
-.example  svg{margin: 4rem auto;display:block;max-height: 10em; max-width: 25em; }
-
-
-.example .only-dark-background{display:block !important;/*important is appropriate*/ opacity:0;}
-
-@media (min-width:40em){ .example:hover{background-color:#456 ; color:#fff}
-.example:hover .only-dark-background{display:block !important;  opacity: 1; }
- .example:hover .only-light-background{opacity:0;  }
+* {
+  box-sizing: border-box;
+  font-size: 1rem;
 }
-#invert:checked ~ div .example .only-dark-background{display:block !important;  opacity: 1; }
-#invert:checked ~ div .example .only-light-background{opacity:0;  }
 
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  color: #456;
+  margin: 0;
+  padding: 0;
+}
 
-#invert:checked ~ .wrapper{color:#fff; background-color:#456 }
-#invert:checked ~ div header, #invert:checked ~ div footer{background-color:#fff; color:#456; }
-.code-sample{border: .2em solid; overflow:auto;padding:2em; font-family: menlo, monospace ; }
-.code-sample > div{line-height: 3em  ;}
-.code-sample  span{display:inline-block ; white-space:nowrap;  }
-.code-sample .element{ display:block; padding-top:2em; }
-.code-sample .attribute{display:block; padding-left: 4.5em;   }
-.code-sample .element > .attribute:first-child{display:inline; padding-left:1em}
-.code-sample .value{position:relative;   padding-left: 0em;}
-.code-sample span  em { user-select:none;-webkit-user-select:none;position:absolute; bottom:-0em; display:block;  font-size: .6em;padding: 0 .5em; height: 1.5em; line-height:1.5em; font-family:'Work Sans', sans-serif;font-style:normal;opacity:.5; left:0; text-transform: uppercase; font-weight: 600;}
-.code-sample .value.coords{opacity:.5}
-header p{font-weight: 400}
-p{font-weight: 400}
+h1 {
+  font-size: 5em;
+  font-weight: 600;
+}
 
-h3{font-weight: 100; font-size:3em;}
-input[type="radio"]{display:none}
-.github-link, label{ background-color:#456; z-index:9; cursor:pointer; color:#fff;position:fixed; top: 0; right:0;border: .2em solid ; padding: 1em; margin: 0; font-weight:600; -webkit-user-select:none; user-select:none; text-transform: uppercase; text-align:center;  width: 12em; display:block;}
+.container {
+  margin: 0 auto;
+  max-width: 50em;
+  padding: 2rem 1rem;
+}
 
-.github-link{text-decoration:none;  margin: 0; position:fixed; top:0; left:0; }
+.container {font-size: 1rem; line-height: 1.5rem;}
+header, footer {
+  background-color: #456;
+  color: #fff;
+  padding: 4rem 0;
+}
 
-.github-link:hover, label:hover{color:#456; background-color:#fff;}
-input[type="radio"]:checked + label{display:none ; opacity:0;}
+.uppercase {
+  text-transform: uppercase;
+}
 
-h3{margin-bottom:0;margin-top: 2em;}
-.opacity-demo {text-align:center;}
-.opacity-demo svg{ margin:1rem; max-width: 40%; max-height: 7em; display:inline-block;}
+svg, path, rect, ellipse, polygon, text {
+  fill: currentcolor;
+}
 
+.example {
+  padding: 2rem;
+}
 
+.example path {
+  transition: all 1s ease;
+}
 
+.example svg {
+  margin: 4rem auto;
+  display: block;
+  max-height: 10em;
+  max-width: 25em;
+}
 
+.example .only-dark-background {
+  display: block !important;
+  /*important is appropriate*/
+  opacity: 0;
+}
 
-.brushpen {
-margin: 0 auto; width: 7em; height: 7em;;
+@media (min-width: 40em) {
+  .example:hover {
+    background-color: #456;
+    color: #fff;
+  }
 
+  .example:hover .only-dark-background {
+    display: block !important;
+    opacity: 1;
+  }
 
+  .example:hover .only-light-background {
+    opacity: 0;
+  }
+}
+#invert:checked ~ div .example .only-dark-background {
+  display: block !important;
+  opacity: 1;
+}
+
+#invert:checked ~ div .example .only-light-background {
+  opacity: 0;
+}
+
+#invert:checked ~ .wrapper {
+  color: #fff;
+  background-color: #456;
+}
+
+#invert:checked ~ div header, #invert:checked ~ div footer {
+  background-color: #fff;
+  color: #456;
+}
+
+.code-sample {
+  border: .2em solid;
+  overflow: auto;
+  padding: 2em;
+  font-family: menlo, monospace;
+}
+
+.code-sample > div {
+  line-height: 3em;
+}
+
+.code-sample span {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.code-sample .element {
+  display: block;
+  padding-top: 2em;
+}
+
+.code-sample .attribute {
+  display: block;
+  padding-left: 4.5em;
+}
+
+.code-sample .element > .attribute:first-child {
+  display: inline;
+  padding-left: 1em;
+}
+
+.code-sample .value {
+  position: relative;
+  padding-left: 0em;
+}
+
+.code-sample span em {
+  user-select: none;
+  -webkit-user-select: none;
+  position: absolute;
+  bottom: -0em;
+  display: block;
+  font-size: .6em;
+  padding: 0 .5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  opacity: .5;
+  left: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.code-sample .value.coords {
+  opacity: .5;
+}
+
+header p {
+  font-weight: 400;
+}
+
+p {
+  font-weight: 400;
+}
+
+h3 {
+  margin-bottom: 0;
+  margin-top: 3em;
+  font-weight: 100;
+  font-size: 3em;
+  line-height: 1.15em;margin-bottom:1em;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.github-link, label {
+  background-color: #456;
+  z-index: 9;
+  cursor: pointer;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  border: 0.2em solid;
+  padding: 1em;
+  margin: 0;
+  font-weight: 600;
+  -webkit-user-select: none;
+  user-select: none;
+  text-transform: uppercase;
+  text-align: center;
+  width: 12em;
   display: block;
 }
 
+.github-link {
+  text-decoration: none;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.github-link:hover, label:hover {
+  color: #456;
+  background-color: #fff;
+}
+
+input[type="radio"]:checked + label {
+  display: none;
+  opacity: 0;
+}
+
+.opacity-demo {
+  text-align: center;
+}
+
+.opacity-demo svg {
+  margin: 1rem;
+  max-width: 40%;
+  max-height: 7em;
+  display: inline-block;
+}
+
+.brushpen {
+  margin: 0 auto;
+  width: 7em;
+  height: 7em;
+  display: block;
+}
 
 .graphic {
-  fill: currentcolor;transform:scale(0.7);
-  animation: 1.5s spin cubic-bezier(0.25, 1.5, 0, 2) infinite ;
+  fill: currentcolor;
+  transform: scale(0.7);
+  animation: 1.5s spin cubic-bezier(0.25, 1.5, 0, 2) infinite;
   transform-origin: 50% 50%;
 }
 
 @keyframes spin {
-  0% { transform: rotate(-10deg) scale(0.7); }
-  50% { transform: rotate(100deg) scale(0.7); }
-  100% { transform: rotate(-10deg) scale(0.7); } }
-
-
-.smear {  fill:none;stroke:currentcolor;stroke-width:20;stroke-dasharray:400, 400;stroke-linecap:round; stroke-dashoffset:400;
-  opacity:1; animation: 1.5s smear cubic-bezier(0.5, .5, 0, 0) infinite }
+  0% {
+    transform: rotate(-10deg) scale(0.7);
+  }
+  50% {
+    transform: rotate(100deg) scale(0.7);
+  }
+  100% {
+    transform: rotate(-10deg) scale(0.7);
+  }
+}
+.smear {
+  fill: none;
+  stroke: currentcolor;
+  stroke-width: 20;
+  stroke-dasharray: 400, 400;
+  stroke-linecap: round;
+  stroke-dashoffset: 400;
+  opacity: 1;
+  animation: 1.5s smear cubic-bezier(0.5, 0.5, 0, 0) infinite;
+}
 
 @keyframes smear {
-  0% {stroke-dashoffset: 750;}
-  2% {stroke-dashoffset: 750;}
-  2% { stroke-dashoffset: 420;}
-  49% { stroke-dashoffset: 90; }
-  51% { stroke-dashoffset: 400; }
-  100% { stroke-dashoffset: 750; }
+  0% {
+    stroke-dashoffset: 750;
+  }
+  2% {
+    stroke-dashoffset: 750;
+  }
+  2% {
+    stroke-dashoffset: 420;
+  }
+  49% {
+    stroke-dashoffset: 90;
+  }
+  51% {
+    stroke-dashoffset: 400;
+  }
+  100% {
+    stroke-dashoffset: 750;
+  }
+}
+a {
+  color: currentcolor;
 }
 
-a{color: currentcolor}
-h2{font-weight: 100; font-size: 5em;}
-ul{margin: 1rem 0 ; padding:0;}
-li{display: inline-block; vertical-align:top;margin:0; width: 30% ; padding: 1rem 0;  border-top: .125em solid; margin-right: 3%}
-li:last-child{margin-right:0;}
-
-
-
-@media (max-width:40em){
-
-
-  li{width: 100%}
-  h1{font-size: 18vw}
-h1 small{display:block; width: 100% ; font-size: 4vw}
-.code-sample{padding: 1rem ;}
- .code-sample .attribute{padding-left:.5em !important;}
- .code-sample span .attribute{ display:block !important; width: 100%;}
-  .example{padding:0  !important;}
-.code-sample em{margin-left:-5em;}
+h2 {
+  font-weight: 100;
+  font-size: 5em;
 }
 
+ul {
+  margin: 1rem 0;
+  padding: 0;
+}
 
-  .intro p, .intro h2{text-align:center}
+li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  width: 30%;
+  padding: 1rem 0;
+  border-top: .125em solid;
+  margin-right: 3%;
+}
 
-.safe-viewbox{
+li:last-child {
+  margin-right: 0;
+}
 
-  position:relative; text-align:center; display:inline-block;
+@media (max-width: 40em) {
+  li {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 18vw;
+  }
+
+  h1 small {
+    display: block;
+    width: 100%;
+    font-size: 4vw;
+  }
+
+  .code-sample {
+    padding: 1rem;
+  }
+
+  .code-sample .attribute {
+    padding-left: .5em !important;
+  }
+
+  .code-sample span .attribute {
+    display: block !important;
+    width: 100%;
+  }
+
+  .example {
+    padding: 0  !important;
+  }
+
+  .code-sample em {
+    margin-left: -5em;
+  }
+}
+.intro p, .intro h2 {
+  text-align: center;
+}
+
+.safe-viewbox {
+  position: relative;
+  text-align: center;
+  display: inline-block;
   display: flex;
   align-items: center;
   justify-content: center;
-vertical-align: center; height: 12em; width: 100%}
+  vertical-align: center;
+  height: 12em;
+  width: 100%;
+}
 
-.safe-viewbox svg{height: 8em; width: 100%; border: .1em solid;
+.safe-viewbox svg {
+  height: 8em;
+  width: 100%;
+  border: .1em solid;
+  animation: viewboxey 2s ease alternate infinite;
+}
 
-animation: viewboxey 2s ease alternate infinite}
+.safe-viewbox svg path {
+  stroke-width: 1px;
+  stroke: currentcolor;
+  fill-opacity: 0.25;
+}
 
-.safe-viewbox svg path{stroke-width:1px; stroke:currentcolor; fill-opacity:0.25}
-code{padding: .2em; opacity:.7}
+code {
+  padding: .2em;
+  opacity: .7;
+}
 
-
-
-@keyframes viewboxey{
-  100%{height: 12em; width: 30%}
+@keyframes viewboxey {
+  100% {
+    height: 12em;
+    width: 30%;
+  }
 }
