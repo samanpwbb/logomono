@@ -83,6 +83,8 @@ margin: 0 auto; width: 7em; height: 7em;;
   100% { stroke-dashoffset: 750; }
 }
 
+
+h2{font-weight: 100; font-size: 5em;}
 ul{margin: 1rem 0 ; padding:0;}
 li{display: inline-block; vertical-align:top;margin:0; width: 30% ; padding: 1rem 0;  border-top: .125em solid; margin-right: 3%}
 li:last-child{margin-right:0;}
