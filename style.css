@@ -2,10 +2,10 @@
 body{font-family: 'Work Sans', sans-serif; font-weight: 300;
 color:#567; margin:0; padding:0;}
 
-h1{font-size: 5em; font-weight: 100;}
+h1{font-size: 5em; font-weight: 600;}
 .container{margin: 0 auto; max-width: 50em; padding: 2rem}
 header{background-color:#567; color:#fff}
-
+.uppercase{text-transform: uppercase}
 
 
 svg,path,rect,ellipse,polygon,text{fill:currentcolor}
