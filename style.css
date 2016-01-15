@@ -4,7 +4,7 @@ color:#456; margin:0; padding:0;}
 
 h1{font-size: 5em; font-weight: 600;}
 .container{margin: 0 auto; max-width: 50em; padding: 2rem 1rem}
-header,footer{background-color:#456; color:#fff; padding: 3rem 0}
+header,footer{background-color:#456; color:#fff; padding: 4rem 0}
 .uppercase{text-transform: uppercase}
 
 
@@ -42,8 +42,11 @@ p{font-weight: 400}
 
 h3{font-weight: 100; font-size:3em;}
 input[type="radio"]{display:none}
-label{ background-color:#456; z-index:9; cursor:pointer; color:#fff;position:fixed; top: 0; right:0;border: .2em solid ; padding: 1em; margin: 0; font-weight:600; -webkit-user-select:none; user-select:none; text-transform: uppercase; text-align:center;  width: 12em; display:block;}
-label:hover{color:#456; background-color:#fff;}
+.github-link, label{ background-color:#456; z-index:9; cursor:pointer; color:#fff;position:fixed; top: 0; right:0;border: .2em solid ; padding: 1em; margin: 0; font-weight:600; -webkit-user-select:none; user-select:none; text-transform: uppercase; text-align:center;  width: 12em; display:block;}
+
+.github-link{text-decoration:none;  margin: 0; position:fixed; top:0; left:0; }
+
+.github-link:hover, label:hover{color:#456; background-color:#fff;}
 input[type="radio"]:checked + label{display:none ; opacity:0;}
 
 h3{margin-bottom:0;margin-top: 2em;}
@@ -86,7 +89,7 @@ margin: 0 auto; width: 7em; height: 7em;;
   100% { stroke-dashoffset: 750; }
 }
 
-
+a{color: currentcolor}
 h2{font-weight: 100; font-size: 5em;}
 ul{margin: 1rem 0 ; padding:0;}
 li{display: inline-block; vertical-align:top;margin:0; width: 30% ; padding: 1rem 0;  border-top: .125em solid; margin-right: 3%}

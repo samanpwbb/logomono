@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 296.91 149.86" id="svg3362" height="149.86" width="296.91" version="1.1">
+  <defs id="defs3364"></defs>
+  <path d="m 264.08,69.28 h 28.83 v 28.83 h -28.83 z m -86.47,0 h 28.82 v 28.83 h -28.82 z m -86.47,0 h 28.82 V 98.11 H 91.14 Z m -18.35,46.25 c 0,9.15 1.33,15.08 4.01,17.82 2.27,2.33 6.13,3.77 11.54,4.3 1.6,0.14 4.35,0.2 8.23,0.2 v 8.01 H 27.12 v -8.01 c 5.58,0 9.69,-0.27 12.35,-0.8 5.38,-1.13 8.77,-4.27 10.17,-9.41 0.72,-2.67 1.09,-6.7 1.09,-12.11 V 10.81 C 38.95,11.14 29.73,15.04 23.08,22.52 16.76,29.67 12.9,40.63 11.5,55.38 L 4,54.08 5.39,4 H 118.3 l 1.4,50.08 -7.51,1.3 C 110.79,40.63 106.9,29.67 100.56,22.52 93.87,15.04 84.61,11.14 72.79,10.81 Z M 4.13,69.28 H 32.96 V 98.11 H 4.13 Z" id="path108"></path>
+  <metadata id="metadata4161">
+    <rdf:rdf>
+      <cc:work rdf:about="">
+        <dc:title></dc:title>
+      </cc:work>
+    </rdf:rdf>
+  </metadata>
+</svg>
