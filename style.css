@@ -96,3 +96,6 @@ li:last-child{margin-right:0;}
  .code-sample .attribute{padding-left:.5em !important;}
  .code-sample span .attribute{ display:block !important; width: 100%;}
   .example{padding:0  !important;}}
+
+
+  .intro p, .intro h2{text-align:center}
