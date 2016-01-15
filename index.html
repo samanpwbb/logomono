@@ -160,9 +160,14 @@ one-color logos,  the right way
     <p>We know you'll just go to a low quality image search engine if you dont find what you want here, so we're doing our part by at least giving you a high quality file for your fair use / fair comment</p>
     <p> If you represent a brand and are sick of seeing your logo decay around the web, contribute your logo here.</p>
 
-   <h3>Just enough space inside the viewbox</h3>
+   <h3> 4% space inside the viewbox, start at 0 0 </h3>
 <p>leave between 4% and 5% of your total logo area. This prevents logo edges from sharply aliasing at small sizes.
 Don't give too much room however, or the logo will appear tiny when used next to others. Logomono will reject files with blank areas of 10% or greater around the margin </p>
+
+<div class="safe-viewbox"  >
+  <svg  xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 100 50" > <path   d="M 4,4 96,4 96,46 4,46 Z" /> </svg>
+
+</div>
 
 <h3>&lt;path&gt; only</h3>
 <p>no rect, polygon, ellipse, line, circle or text  elements. we want these to be as easy as possible to work with via CSS.<br>
